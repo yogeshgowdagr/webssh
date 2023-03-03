@@ -1,0 +1,10 @@
+version : '3'
+
+
+services:
+  webssh:
+    container_name: webssh
+    image: yogeshgowdagr/webssh:latest
+    ports:
+      - 8000:8000
+
