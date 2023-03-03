@@ -15,3 +15,11 @@ Bring up the container
 docker-compose up -d 
 ```
 Now you can open `localhost:8000` and access the webssh
+
+
+You can also build the image . Run below command 
+```
+docker build -t webssh .
+```
+
+Thanks 
