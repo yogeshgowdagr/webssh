@@ -6,5 +6,15 @@ services:
     container_name: webssh
     image: yogeshgowdagr/webssh:latest
     ports:
-      - 8000:8000
+      - '8000'
 
+  webssh-web:
+    container_name: webssh-nginx
+    image: nginx:stable
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./templates:/etc/nginx/templates:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    
